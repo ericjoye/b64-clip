@@ -1,0 +1,9 @@
+LICENSE
+README.md
+b64_clip.py
+pyproject.toml
+b64_clip.egg-info/PKG-INFO
+b64_clip.egg-info/SOURCES.txt
+b64_clip.egg-info/dependency_links.txt
+b64_clip.egg-info/entry_points.txt
+b64_clip.egg-info/top_level.txt

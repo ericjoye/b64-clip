@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "b64-clip"
+version = "1.0.0"
+description = "Base64 encode/decode with clipboard, zero dependencies"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [{name = "b64-clip contributors"}]
+dependencies = []
+
+[project.scripts]
+b64-clip = "b64_clip:main"
+
+[tool.setuptools]
+py-modules = ["b64_clip"]

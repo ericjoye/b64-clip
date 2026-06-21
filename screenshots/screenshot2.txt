@@ -1,0 +1,13 @@
+╔══════════════════════════════════════════════════════════════════╗
+║  b64-clip — Decoding                                             ║
+║  $ b64-clip decode "aGVsbG8gd29ybGQ="                           ║
+╚══════════════════════════════════════════════════════════════════╝
+
+$ b64-clip decode "aGVsbG8gd29ybGQ="
+hello world
+
+$ b64-clip decode "VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="
+The quick brown fox jumps over the lazy dog
+
+$ b64-clip decode "8J+YjCVVbmljb2RlIHRlc3Qg4oCUIGNhZmnDqSByZXN1bcOp"
+🎉 Unicode test — café résumé

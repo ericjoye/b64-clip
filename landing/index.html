@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>b64-clip — Base64 Encode/Decode with Clipboard</title>
+<meta name="description" content="Base64 encode/decode with automatic clipboard copy. Zero dependencies, cross-platform CLI tool for developers.">
+<meta property="og:title" content="b64-clip — Base64 Encode/Decode with Clipboard">
+<meta property="og:description" content="Encode auth tokens, config values, certificates — result auto-copied to clipboard. Zero dependencies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/forgecraft.css">
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="#" class="brand">
+      <div class="logo-mark"></div>
+      Forgecraft
+      <span class="product-name">/ b64-clip</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#install">Install</a></li>
+      <li><a href="https://github.com/ericjoye/b64-clip" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#install" class="nav-cta">Get Started</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="badge">CLI Tool · Zero Dependencies</div>
+    <h1>Base64 Encode &amp; Decode<br><span>with Clipboard</span></h1>
+    <p class="tagline">Encode auth tokens, config values, certificates, and more — result automatically copied to your clipboard. Zero dependencies.</p>
+    <div class="cta-group">
+      <a href="#install" class="btn btn-primary">Get Started</a>
+      <a href="https://github.com/ericjoye/b64-clip" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+    <div class="terminal" style="margin-top:48px;max-width:500px">
+      <div class="terminal-header">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+      <div style="padding:20px;font-family:'JetBrains Mono',monospace;font-size:0.85rem;line-height:1.8">
+        <div><span class="prompt">$</span> b64-clip encode "hello world"</div>
+        <div class="output">aGVsbG8gd29ybGQ=</div>
+        <div class="comment"># ✓ Copied to clipboard</div>
+        <div style="margin-top:8px"><span class="prompt">$</span> b64-clip decode "aGVsbG8gd29ybGQ="</div>
+        <div class="output">hello world</div>
+        <div class="comment"># ✓ Copied to clipboard</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why b64-clip?</h2>
+      <p>Built for developers who need fast, reliable base64 encoding without leaving the terminal.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">📋</div>
+        <h3>Auto Clipboard</h3>
+        <p>Results are automatically copied to your clipboard on macOS, Linux (xclip/wl-copy), and Windows (clip.exe).</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔄</div>
+        <h3>Bidirectional</h3>
+        <p>Encode plaintext to base64 or decode base64 back to plaintext — all with a single command.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📁</div>
+        <h3>File &amp; Pipe Support</h3>
+        <p>Encode or decode entire files with <code style="color:var(--primary)">--file</code>, or pipe from stdin for seamless shell integration.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔒</div>
+        <h3>Zero Dependencies</h3>
+        <p>Pure Python 3.11+ stdlib. No pip install needed at runtime. Nothing logged, stored, or sent anywhere.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌐</div>
+        <h3>URL-Safe Mode</h3>
+        <p>Supports URL-safe base64 encoding and decoding with the <code style="color:var(--primary)">--url-safe</code> flag.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Three steps from install to productivity.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Install</h4>
+        <p>One command via pip, or just run the script directly. No setup, no config.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Encode or Decode</h4>
+        <p>Pass a string, file, or pipe stdin. Supports standard and URL-safe base64.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Paste &amp; Go</h4>
+        <p>Result is printed and auto-copied to clipboard. Ready to use instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="install" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Installation</h2>
+      <p>Get started in seconds.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">📦</div>
+        <h3>pip install</h3>
+        <div style="background:#0d1117;border:1px solid var(--border);border-radius:8px;padding:16px;font-family:'JetBrains Mono',monospace;font-size:0.85rem;color:var(--primary);margin-top:12px">pip install b64-clip</div>
+        <p style="margin-top:12px">Recommended. Installs the CLI globally.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🐍</div>
+        <h3>Run directly</h3>
+        <div style="background:#0d1117;border:1px solid var(--border);border-radius:8px;padding:16px;font-family:'JetBrains Mono',monospace;font-size:0.85rem;color:var(--primary);margin-top:12px">python3 b64_clip.py encode "hello"</div>
+        <p style="margin-top:12px">No install needed. Just run the script.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🐧</div>
+        <h3>Linux clipboard</h3>
+        <div style="background:#0d1117;border:1px solid var(--border);border-radius:8px;padding:16px;font-family:'JetBrains Mono',monospace;font-size:0.85rem;color:var(--primary);margin-top:12px">sudo apt install xclip</div>
+        <p style="margin-top:12px">Required for clipboard support on Linux.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-brand">
+      <div class="logo-mark"></div>
+      <span class="logo-text">Forgecraft</span>
+    </div>
+    <p class="footer-brand-sub">Tools worth building on.</p>
+    <div class="footer-links">
+      <a href="https://github.com/ericjoye/b64-clip" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:eric@ericjoye.com">Support</a>
+    </div>
+    <p>&copy; 2026 Forgecraft. Open source under MIT License.</p>
+  </div>
+</footer>
+
+</body>
+</html>

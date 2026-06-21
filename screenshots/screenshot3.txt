@@ -1,0 +1,16 @@
+╔══════════════════════════════════════════════════════════════════╗
+║  b64-clip — File Encoding & Pipe Mode                            ║
+╚══════════════════════════════════════════════════════════════════╝
+
+$ echo "secret data" > /tmp/test_file.txt
+$ b64-clip encode --file /tmp/test_file.txt
+c2VjcmV0IGRhdGEK
+
+$ cat /tmp/test_file.txt | b64-clip encode
+c2VjcmV0IGRhdGEK
+
+$ echo "pipe mode test" | b64-clip encode
+cGlwZSBtb2RlIHRlc3QK
+
+$ b64-clip decode "aGVsbG8gd29ybGQ=" | b64-clip encode
+aGVsbG8gd29ybGQ=

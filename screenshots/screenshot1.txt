@@ -1,0 +1,16 @@
+╔══════════════════════════════════════════════════════════════════╗
+║  b64-clip — Base64 Encode/Decode with Clipboard                    ║
+║  $ b64-clip encode "hello world"                                ║
+╚══════════════════════════════════════════════════════════════════╝
+
+$ b64-clip encode "hello world"
+aGVsbG8gd29ybGQ=
+
+$ b64-clip encode "The quick brown fox jumps over the lazy dog"
+VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw==
+
+$ b64-clip encode ""
+(empty string encoded)
+
+$ b64-clip encode "🎉 Unicode test — café résumé"
+8J+YjCVVbmljb2RlIHRlc3Qg4oCUIGNhZmnDqSByZXN1bcOp

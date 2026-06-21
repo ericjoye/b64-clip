@@ -1,0 +1,23 @@
+╔══════════════════════════════════════════════════════════════════╗
+║  b64-clip — Error Handling & Usage                               ║
+╚══════════════════════════════════════════════════════════════════╝
+
+$ b64-clip decode "invalid!!!base64"
+Error: Decode failed (Invalid base64-encoded string: number of data
+characters (13) cannot be 1 more than a multiple of 4). Check that
+input is valid base64.
+
+$ b64-clip
+usage: b64-clip [-h] {encode,decode} ...
+b64-clip: error: the following arguments are required: command
+
+$ b64-clip --help
+usage: b64-clip [-h] {encode,decode} ...
+
+Base64 encode/decode with clipboard, zero dependencies.
+
+positional arguments:
+  {encode,decode}  Command to run
+
+options:
+  -h, --help       show this help message and exit

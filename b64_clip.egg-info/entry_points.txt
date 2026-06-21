@@ -1,0 +1,2 @@
+[console_scripts]
+b64-clip = b64_clip:main
